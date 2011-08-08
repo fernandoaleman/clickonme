@@ -84,7 +84,7 @@
 			<% if @shortcode %>
 			<div class="result">
 				Your shortened URL is:
-				<a href="/<%= @shortcode %>">/<%= @shortcode %></a>
+				<a href="<%= ENV["URL"] %>/<%= @shortcode %>" target="shortlink">/<%= ENV["URL"] %>/<%= @shortcode %></a>
 			</div>
 			<% end %>
 		</div>
