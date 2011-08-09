@@ -74,7 +74,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>shortlink app</h1>
+			<h1>cl.ickon.me</h1>
 			<div class="instructions">Be sure to include <code>http://</code> or <code>https://</code></div>
 			<form method="post">
 				<input type="text" value="<%= h(params[:url]) %>" name="url" id="url" />
@@ -84,7 +84,7 @@
 			<% if @shortcode %>
 			<div class="result">
 				Your shortened URL is:
-				<a href="http://<%= ENV["URL"] %>/<%= @shortcode %>" target="shortlink">http://<%= ENV["URL"] %>/<%= @shortcode %></a>
+				<a href="http://cl.ickon.me/<%= @shortcode %>" target="clickonme">http://cl.ickon.me/<%= @shortcode %></a>
 			</div>
 			<% end %>
 		</div>
